@@ -1,0 +1,9 @@
+body { font-family: 'Outfit', sans-serif; }
+/* To add a smoother transition */
+.group:hover img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+img {
+    transition: transform 0.5s ease;
+}
