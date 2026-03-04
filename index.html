@@ -1,231 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drone - A New Era Of Drones</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Custom JS (Tailwind Config) -->
     <script src="script.js"></script>
-</head>
-<body class="bg-white text-gray-800 antialiased overflow-x-hidden">
-
+  </head>
+  <body class="bg-white text-gray-800 antialiased overflow-x-hidden">
     <!-- Hero Section with Navbar -->
-    <header class="relative bg-gray-900 min-h-[100vh] flex flex-col overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88?q=80&w=2000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay" alt="Drone Hero Background" />
-        
-        <!-- Navbar -->
-        <nav class="relative z-10 flex items-center justify-between px-10 py-6 text-white border-b border-white/20 max-w-6xl mx-auto w-full">
-            <div class="text-2xl font-bold flex items-center">
-                <span class="mr-2 tracking-wide">AAS-RG</span>
-            </div>
-            <div class="hidden md:flex space-x-10 text-sm font-medium">
-                <a href="#" class="hover:text-gray-300 transition-colors">Beranda</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Tentang Kami</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Produk</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Spesifikasi</a>
-                <a href="#" class="hover:text-gray-300 transition-colors">Inovasi</a>
-            </div>
-            <div class="flex items-center space-x-8 text-sm font-medium">
-                <a href="#" class="px-6 py-2.5 bg-white text-gray-900 shadow-lg font-semibold hover:bg-gray-100 transition-colors">Hubungi Kami</a>
-            </div>
-        </nav>
-        
-        <!-- Hero Content -->
-        <div class="relative z-10 max-w-6xl w-full mx-auto px-10 flex-1 flex flex-col justify-end pb-24">
-            <div class="flex items-end justify-between w-full">
-                <h1 class="text-white text-[3.5rem] font-bold leading-[1.1] w-[55%] pb-4 drop-shadow-lg">Autonomous Aerial System Research Group</h1>
-                <div class="w-[35%] flex flex-col justify-end pb-8">
-                    <p class="text-white text-base mb-8 leading-relaxed drop-shadow-md">Pengembangan sistem drone cerdas bagi sektor pendidikan dan solusi logistik otomatis</p>
-                    <button class="bg-white text-gray-900 px-8 py-4 font-bold flex items-center justify-between w-max gap-8 hover:bg-gray-100 transition-colors">
-                        Selengkapnya
-                        <span class="text-primary font-bold text-xl leading-none">→</span>
-                    </button>
-                </div>
-            </div>
+    <header
+      class="relative bg-gray-900 min-h-[100vh] flex flex-col overflow-hidden"
+    >
+      <img
+        src="image/hero.jpeg"
+        class="absolute inset-0 w-full h-full object-cover opacity-30"
+        alt="Drone Hero Background"
+      />
+
+      <!-- Navbar -->
+      <nav
+        class="relative z-10 flex items-center justify-between px-10 py-6 text-white border-b border-white/20 max-w-6xl mx-auto w-full"
+      >
+        <div class="text-2xl font-bold flex items-center">
+          <span class="mr-2 tracking-wide">AAS-RG</span>
         </div>
+        <div class="hidden md:flex space-x-10 text-sm font-medium">
+          <a href="#beranda" class="hover:text-gray-300 transition-colors"
+            >Beranda</a
+          >
+          <a href="#about" class="hover:text-gray-300 transition-colors"
+            >Tentang Kami</a
+          >
+          <a href="#produk" class="hover:text-gray-300 transition-colors"
+            >Produk</a
+          >
+          <a href="#spesifikasi" class="hover:text-gray-300 transition-colors"
+            >Spesifikasi</a
+          >
+          <a href="#inovasi" class="hover:text-gray-300 transition-colors"
+            >Inovasi</a
+          >
+        </div>
+        <div class="flex items-center space-x-8 text-sm font-medium">
+          <a
+            href="#"
+            class="px-6 py-2.5 bg-white text-gray-900 shadow-lg font-semibold hover:bg-gray-100 transition-colors"
+            >Hubungi Kami</a
+          >
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div
+        class="relative z-10 max-w-6xl w-full mx-auto px-10 flex-1 flex flex-col justify-end pb-24"
+        id="beranda"
+      >
+        <div class="flex items-end justify-between w-full">
+          <h1
+            class="text-white text-[3.5rem] font-bold leading-[1.1] w-[55%] pb-4 drop-shadow-lg"
+          >
+            Autonomous Aerial System Research Group
+          </h1>
+          <div class="w-[35%] flex flex-col justify-end pb-8">
+            <p class="text-white text-base mb-8 leading-relaxed drop-shadow-md">
+              Pengembangan sistem drone cerdas bagi sektor pendidikan dan solusi
+              logistik otomatis
+            </p>
+            <button
+              class="bg-white text-gray-900 px-8 py-4 font-bold flex items-center justify-between w-max gap-8 hover:bg-gray-100 transition-colors"
+            >
+              Selengkapnya
+              <span class="text-primary font-bold text-xl leading-none">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- About Us Section -->
-    <section class="max-w-6xl mx-auto px-10 py-24 flex flex-col md:flex-row gap-16 items-center bg-white">
-        <div class="w-full md:w-1/2 relative">
-            <div class="absolute inset-0 bg-primary/10 rounded-xl transform translate-x-4 translate-y-4"></div>
-            <img src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88?w=800&auto=format&fit=crop" class="relative z-10 w-full rounded-xl shadow-md h-[400px] object-cover" alt="Tim AAS-RG"/>
-        </div>
-        <div class="w-full md:w-1/2">
-            <h2 class="text-[2.5rem] font-bold mb-6 text-gray-900 leading-tight">Mengenal Lebih Dekat<br><span class="text-primary">AAS-RG</span></h2>
-            <div class="h-1 w-20 bg-primary mb-8"></div>
-            <p class="text-gray-500 mb-6 text-[15px] leading-relaxed">
-                Autonomous Aerial System Research Group (AAS-RG) berdedikasi untuk menciptakan teknologi drone tanpa awak untuk berbagai kebutuhan di sektor pendidikan dan pengiriman cerdas. Membawa semangat inovasi di Indonesia.
-            </p>
-            <p class="text-gray-500 mb-8 text-[15px] leading-relaxed">
-                Dari riset hingga produksi, kami memprioritaskan keamanan komprehensif, performa yang handal, dan sistem pangkalan (ground station) untuk memastikan teknologi mengudara tetap terkendali.
-            </p>
-        </div>
+    <section
+      class="max-w-6xl mx-auto px-10 py-24 flex flex-col md:flex-row gap-16 items-center bg-white"
+      id="about"
+    >
+      <div class="w-full md:w-1/2 relative">
+        <div
+          class="absolute inset-0 bg-primary/10 rounded-xl transform translate-x-4 translate-y-4"
+        ></div>
+        <img
+          src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88?w=800&auto=format&fit=crop"
+          class="relative z-10 w-full rounded-xl shadow-md h-[400px] object-cover"
+          alt="Tim AAS-RG"
+        />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2 class="text-[2.5rem] font-bold mb-6 text-gray-900 leading-tight">
+          Mengenal Lebih Dekat<br /><span class="text-primary">AAS-RG</span>
+        </h2>
+        <div class="h-1 w-20 bg-primary mb-8"></div>
+        <p class="text-gray-500 mb-6 text-[15px] leading-relaxed">
+          Autonomous Aerial System Research Group (AAS-RG) berdedikasi untuk
+          menciptakan teknologi drone tanpa awak untuk berbagai kebutuhan di
+          sektor pendidikan dan pengiriman cerdas. Membawa semangat inovasi di
+          Indonesia.
+        </p>
+        <p class="text-gray-500 mb-8 text-[15px] leading-relaxed">
+          Dari riset hingga produksi, kami memprioritaskan keamanan
+          komprehensif, performa yang handal, dan sistem pangkalan (ground
+          station) untuk memastikan teknologi mengudara tetap terkendali.
+        </p>
+      </div>
     </section>
 
     <!-- Features Section -->
     <section class="max-w-6xl mx-auto px-10 py-24 flex gap-12 bg-white">
-        <div class="w-1/2 grid grid-cols-2 gap-8">
-            <!-- Card 1 (Blue) -->
-            <div class="bg-primary text-white p-8 shadow-md flex flex-col justify-between hover:-translate-y-1 transition duration-300">
-                <div class="text-sm font-bold flex flex-col gap-3 mb-10">
-                    <span>01</span>
-                    <div class="h-[2px] w-8 bg-white/50"></div>
-                </div>
-                <div>
-                    <h3 class="font-bold text-xl mb-3">Riset & Inovasi Teknologi </h3>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-white text-gray-800 p-8 shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition duration-300">
-                <div class="text-sm font-bold flex flex-col gap-3 mb-10 text-primary">
-                    <span>02</span>
-                    <div class="h-[2px] w-8 bg-primary/30"></div>
-                </div>
-                <div>
-                    <h3 class="font-bold text-xl mb-3 text-gray-900">Solusi Sektor Pendidikan</h3>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="bg-white text-gray-800 p-8 shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition duration-300">
-                <div class="text-sm font-bold flex flex-col gap-3 mb-10 text-primary">
-                    <span>03</span>
-                    <div class="h-[2px] w-8 bg-primary/30"></div>
-                </div>
-                <div>
-                    <h3 class="font-bold text-xl mb-3 text-gray-900">Pengiriman Cerdas Logistik</h3>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="bg-white text-gray-800 p-8 shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition duration-300">
-                <div class="text-sm font-bold flex flex-col gap-3 mb-10 text-primary">
-                    <span>04</span>
-                    <div class="h-[2px] w-8 bg-primary/30"></div>
-                </div>
-                <div>
-                    <h3 class="font-bold text-xl mb-3 text-gray-900">Keamanan & Kehandalan</h3>
-                </div>
-            </div>
+      <div class="w-1/2 grid grid-cols-2 gap-8">
+        <!-- Card 1 (Blue) -->
+        <div
+          class="bg-primary text-white p-8 shadow-md flex flex-col justify-between hover:-translate-y-1 transition duration-300"
+        >
+          <div class="text-sm font-bold flex flex-col gap-3 mb-10">
+            <span>01</span>
+            <div class="h-[2px] w-8 bg-white/50"></div>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-3">Riset & Inovasi Teknologi</h3>
+          </div>
         </div>
-        <div class="w-1/2">
-            <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=800&auto=format&fit=crop" class="w-full h-[105%] object-cover shadow-sm" alt="Drone against sky"/>
+        <!-- Card 2 -->
+        <div
+          class="bg-white text-gray-800 p-8 shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition duration-300"
+        >
+          <div class="text-sm font-bold flex flex-col gap-3 mb-10 text-primary">
+            <span>02</span>
+            <div class="h-[2px] w-8 bg-primary/30"></div>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              Solusi Sektor Pendidikan
+            </h3>
+          </div>
         </div>
+        <!-- Card 3 -->
+        <div
+          class="bg-white text-gray-800 p-8 shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition duration-300"
+        >
+          <div class="text-sm font-bold flex flex-col gap-3 mb-10 text-primary">
+            <span>03</span>
+            <div class="h-[2px] w-8 bg-primary/30"></div>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              Pengiriman Cerdas Logistik
+            </h3>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div
+          class="bg-white text-gray-800 p-8 shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition duration-300"
+        >
+          <div class="text-sm font-bold flex flex-col gap-3 mb-10 text-primary">
+            <span>04</span>
+            <div class="h-[2px] w-8 bg-primary/30"></div>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              Keamanan & Kehandalan
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <img
+          src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=800&auto=format&fit=crop"
+          class="w-full h-[105%] object-cover shadow-sm"
+          alt="Drone against sky"
+        />
+      </div>
     </section>
 
     <!-- Services Section -->
-    <section class="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto mt-10">
-        <div class="w-1/2">
-            <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1000&auto=format&fit=crop" class="w-full h-[500px] object-cover" alt="Flying Drone" />
-        </div>
-        <div class="w-1/2 bg-primary text-white p-16 md:p-24 flex flex-col justify-center">
-            <h2 class="text-[2.3rem] font-bold mb-14 w-11/12 leading-tight">Produk yang telah dibuat oleh tim Autonomous Aerial System Research Group</h2>
-            <div class="flex gap-16 mb-16">
-                <div>
-                    <div class="text-[2.5rem] font-bold mb-2">2</div>
-                    <div class="text-[11px] uppercase tracking-widest opacity-80 font-semibold">Drone</div>
-                </div>
-                <div>
-                    <div class="text-[2.5rem] font-bold mb-2">1</div>
-                    <div class="text-[11px] uppercase tracking-widest opacity-80 font-semibold">Buku</div>
-                </div>
-                <div>
-                    <div class="text-[2.5rem] font-bold mb-2">1</div>
-                    <div class="text-[11px] uppercase tracking-widest opacity-80 font-semibold">LoRa Gateway</div>
-                </div>
+    <section
+      class="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto mt-10"
+      id="produk"
+    >
+      <div class="w-1/2">
+        <img
+          src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1000&auto=format&fit=crop"
+          class="w-full h-[500px] object-cover"
+          alt="Flying Drone"
+        />
+      </div>
+      <div
+        class="w-1/2 bg-primary text-white p-16 md:p-24 flex flex-col justify-center"
+      >
+        <h2 class="text-[2.3rem] font-bold mb-14 w-11/12 leading-tight">
+          Produk yang telah dibuat oleh tim Autonomous Aerial System Research
+          Group
+        </h2>
+        <div class="flex gap-16 mb-16">
+          <div>
+            <div class="text-[2.5rem] font-bold mb-2">2</div>
+            <div
+              class="text-[11px] uppercase tracking-widest opacity-80 font-semibold"
+            >
+              Drone
             </div>
+          </div>
+          <div>
+            <div class="text-[2.5rem] font-bold mb-2">1</div>
+            <div
+              class="text-[11px] uppercase tracking-widest opacity-80 font-semibold"
+            >
+              Buku
+            </div>
+          </div>
+          <div>
+            <div class="text-[2.5rem] font-bold mb-2">1</div>
+            <div
+              class="text-[11px] uppercase tracking-widest opacity-80 font-semibold"
+            >
+              LoRa Gateway
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Tech and Innovation -->
-    <section class="max-w-6xl mx-auto px-10 pt-32 pb-24 flex gap-12 items-center bg-white">
-        <div class="w-1/2 pr-12">
-            <h2 class="text-4xl font-bold mb-6 text-gray-900">Produk Unggulan</h2>
-            <h3 class="text-primary font-semibold text-[17px] mb-8 leading-snug">Buku Tutorial Pembuatan Drone dari Nol</h3>
-            <p class="text-gray-500 mb-10 text-[15px] leading-relaxed">Buku ini memberikan panduan lengkap untuk merakit dan memahami drone quadcopter berbasis Arduino Uno dan MultiWii. Dengan pendekatan praktis berbasis proyek, pembaca diajak mempelajari prinsip dasar aerodinamika, fungsi komponen utama, serta langkah demi langkah perakitan hingga uji terbang.</p>
-            <button class="bg-primary text-white border border-primary px-8 py-3.5 font-bold text-[13px] w-max hover:bg-blue-800 transition-colors shadow-lg shadow-primary/30">
-                Selengkapnya
-            </button>
-        </div>
-        <div class="w-1/2">
-            <img src="image/buku.png" class="w-full h-[380px] object-cover shadow-sm bg-gray-50" alt="Mini drone over hands"/>
-        </div>
+    <section
+      class="max-w-6xl mx-auto px-10 pt-32 pb-24 flex gap-12 items-center bg-white"
+    >
+      <div class="w-1/2 pr-12">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">Produk Unggulan</h2>
+        <h3 class="text-primary font-semibold text-[17px] mb-8 leading-snug">
+          Buku Tutorial Pembuatan Drone dari Nol
+        </h3>
+        <p class="text-gray-500 mb-10 text-[15px] leading-relaxed">
+          Buku ini memberikan panduan lengkap untuk merakit dan memahami drone
+          quadcopter berbasis Arduino Uno dan MultiWii. Dengan pendekatan
+          praktis berbasis proyek, pembaca diajak mempelajari prinsip dasar
+          aerodinamika, fungsi komponen utama, serta langkah demi langkah
+          perakitan hingga uji terbang.
+        </p>
+        <button
+          class="bg-primary text-white border border-primary px-8 py-3.5 font-bold text-[13px] w-max hover:bg-blue-800 transition-colors shadow-lg shadow-primary/30"
+        >
+          Selengkapnya
+        </button>
+      </div>
+      <div class="w-1/2">
+        <img
+          src="image/buku.jpeg"
+          class="w-full h-[380px] object-cover shadow-sm bg-gray-50"
+          alt="Buku Tutorial"
+        />
+      </div>
     </section>
 
     <!-- Spesifikasi Drone -->
-    <section class="bg-lightbg py-32 relative overflow-hidden mt-20">
-        <div class="max-w-7xl mx-auto px-10 flex relative z-10 gap-16 items-center flex-row-reverse">
-            <!-- Right text -->
-            <div class="w-[45%] pr-14 pl-6">
-                <h2 class="text-4xl font-bold mb-8 text-gray-900 leading-[1.2]">Spesifikasi Drone</h2>
-                
-                <div class="space-y-4">
-                    <details class="group bg-gray-50 border border-gray-200 p-5 cursor-pointer rounded-md transition-all open:bg-white open:border-primary/30">
-                        <summary class="flex justify-between items-center font-bold text-lg text-gray-700 outline-none w-full appearance-none list-none group-open:text-primary">
-                            Flight Controller, Gyroscope, dan GPS
-                            <span class="text-primary text-xl transition-transform group-open:rotate-90">→</span>
-                        </summary>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            Flight Controller: Arduino Uno R3
-                        </div>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            Gyroscope: MPU6050 MPU-6050 3 AXIS
-                        </div>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            GPS: UBLOX NEO-6MV2
-                        </div>
-                    </details>
+    <section
+      class="bg-lightbg py-32 relative overflow-hidden mt-20"
+      id="spesifikasi"
+    >
+      <div
+        class="max-w-7xl mx-auto px-10 flex relative z-10 gap-16 items-center flex-row-reverse"
+      >
+        <!-- Right text -->
+        <div class="w-[45%] pr-14 pl-6">
+          <h2 class="text-4xl font-bold mb-8 text-gray-900 leading-[1.2]">
+            Spesifikasi Drone
+          </h2>
 
-                    <details class="group bg-gray-50 border border-gray-200 p-5 cursor-pointer rounded-md transition-all open:bg-white open:border-primary/30">
-                        <summary class="flex justify-between items-center font-bold text-lg text-gray-700 outline-none w-full appearance-none list-none group-open:text-primary">
-                            Motor dan ESC
-                            <span class="text-primary text-xl transition-transform group-open:rotate-90">→</span>
-                        </summary>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            Motor: A2212 1400KV BRUSHLESS MOTOR
-                        </div>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            ESC: 30A ESC
-                        </div>
-                    </details>
+          <div class="space-y-4">
+            <details
+              class="group bg-gray-50 border border-gray-200 p-5 cursor-pointer rounded-md transition-all open:bg-white open:border-primary/30"
+            >
+              <summary
+                class="flex justify-between items-center font-bold text-lg text-gray-700 outline-none w-full appearance-none list-none group-open:text-primary"
+              >
+                Flight Controller, Gyroscope, dan GPS
+                <span
+                  class="text-primary text-xl transition-transform group-open:rotate-90"
+                  >→</span
+                >
+              </summary>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                Flight Controller: Arduino Uno R3
+              </div>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                Gyroscope: MPU6050 MPU-6050 3 AXIS
+              </div>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                GPS: UBLOX NEO-6MV2
+              </div>
+            </details>
 
-                    <details class="group bg-gray-50 border border-gray-200 p-5 cursor-pointer rounded-md transition-all open:bg-white open:border-primary/30">
-                        <summary class="flex justify-between items-center font-bold text-lg text-gray-700 outline-none w-full appearance-none list-none group-open:text-primary">
-                            Frame, Baterai, dan Propeller
-                            <span class="text-primary text-xl transition-transform group-open:rotate-90">→</span>
-                        </summary>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            Frame: F330 Quadcopter Frame
-                        </div>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            Baterai: 3S 2200mAh LiPo Battery
-                        </div>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            Propeller: 8045 Propeller
-                        </div>
-                    </details>
+            <details
+              class="group bg-gray-50 border border-gray-200 p-5 cursor-pointer rounded-md transition-all open:bg-white open:border-primary/30"
+            >
+              <summary
+                class="flex justify-between items-center font-bold text-lg text-gray-700 outline-none w-full appearance-none list-none group-open:text-primary"
+              >
+                Motor dan ESC
+                <span
+                  class="text-primary text-xl transition-transform group-open:rotate-90"
+                  >→</span
+                >
+              </summary>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                Motor: A2212 1400KV BRUSHLESS MOTOR
+              </div>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                ESC: 30A ESC
+              </div>
+            </details>
 
-                    <details class="group bg-gray-50 border border-gray-200 p-5 cursor-pointer rounded-md transition-all open:bg-white open:border-primary/30">
-                        <summary class="flex justify-between items-center font-bold text-lg text-gray-700 outline-none w-full appearance-none list-none group-open:text-primary">
-                            Transmiter dan Receiver
-                            <span class="text-primary text-xl transition-transform group-open:rotate-90">→</span>
-                        </summary>
-                        <div class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded">
-                            FlySky FS-i6 FSi6 2.4G 6CH AFHDS RC
-                        </div>
-                    </details>
-                </div>
-            </div>
-            <!-- Left image -->
-            <div class="w-[60%] -ml-16">
-                <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1200&auto=format&fit=crop" class="w-full h-[550px] object-cover shadow-2xl scale-x-[-1]" alt="Drone sideways"/>
-            </div>
+            <details
+              class="group bg-gray-50 border border-gray-200 p-5 cursor-pointer rounded-md transition-all open:bg-white open:border-primary/30"
+            >
+              <summary
+                class="flex justify-between items-center font-bold text-lg text-gray-700 outline-none w-full appearance-none list-none group-open:text-primary"
+              >
+                Frame, Baterai, dan Propeller
+                <span
+                  class="text-primary text-xl transition-transform group-open:rotate-90"
+                  >→</span
+                >
+              </summary>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                Frame: F330 Quadcopter Frame
+              </div>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                Baterai: 3S 2200mAh LiPo Battery
+              </div>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                Propeller: 8045 Propeller
+              </div>
+            </details>
+
+            <details
+              class="group bg-gray-50 border border-gray-200 p-5 cursor-pointer rounded-md transition-all open:bg-white open:border-primary/30"
+            >
+              <summary
+                class="flex justify-between items-center font-bold text-lg text-gray-700 outline-none w-full appearance-none list-none group-open:text-primary"
+              >
+                Transmiter dan Receiver
+                <span
+                  class="text-primary text-xl transition-transform group-open:rotate-90"
+                  >→</span
+                >
+              </summary>
+              <div
+                class="mt-4 text-gray-500 text-[15px] pl-2 border-l-[3px] border-primary/20 bg-gray-50 p-2 rounded"
+              >
+                FlySky FS-i6 FSi6 2.4G 6CH AFHDS RC
+              </div>
+            </details>
+          </div>
         </div>
+        <!-- Left image -->
+        <div class="w-[60%] -ml-16">
+          <img
+            src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1200&auto=format&fit=crop"
+            class="w-full h-[550px] object-cover shadow-2xl scale-x-[-1]"
+            alt="Drone sideways"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- 4 Grid Blocks Section -->
@@ -276,45 +443,69 @@
     </section> -->
 
     <!-- Portfolio Section -->
-    <section class="max-w-6xl mx-auto px-10 py-32 bg-white">
-        <!-- Title row -->
-        <div class="flex justify-between items-end mb-16 border-b border-gray-100 pb-10">
-            <div>
-                <div class="text-primary font-bold text-[12px] mb-4 uppercase tracking-[0.2em]">Portfolio</div>
-                <h2 class="text-[2.5rem] font-bold text-gray-900">Inovasi Terbaru</h2>
-            </div>
+    <section class="max-w-6xl mx-auto px-10 py-32 bg-white" id="inovasi">
+      <!-- Title row -->
+      <div
+        class="flex justify-between items-end mb-16 border-b border-gray-100 pb-10"
+      >
+        <div>
+          <div
+            class="text-primary font-bold text-[12px] mb-4 uppercase tracking-[0.2em]"
+          >
+            Portfolio
+          </div>
+          <h2 class="text-[2.5rem] font-bold text-gray-900">Inovasi Terbaru</h2>
         </div>
+      </div>
 
-        <!-- Items list -->
-        <div class="space-y-0 text-gray-900">
-            <!-- Item 1 -->
-            <div class="flex gap-16 py-14 border-b border-gray-100 items-start group">
-                <div class="w-[60%] pr-10 pt-2">
-                    <div class="text-primary font-bold text-[13px] mb-5 tracking-wide">1 Desember, 2025</div>
-                    <h3 class="text-3xl font-bold mb-6">AerialCast</h3>
-                    <p class="text-gray-500 mb-8 text-[15px] leading-loose">Sistem ini menyediakan pemantauan telemetri real-time berbasis LoRa (GPS, voltase, RSSI), perencanaan misi terbang lengkap dengan waypoint dan persetujuan admin, serta manajemen armada terpusat untuk kontrol unit dan pelacakan pemeliharaan drone yang komprehensif.</p>
-                    <a href="https://github.com/Astheria23/AerialCast.git" class="text-[14px] font-bold flex items-center gap-4 hover:text-primary transition-colors">
-                        Lihat Selengkapnya <span class="text-primary text-lg">→</span>
-                    </a>
-                </div>
-                <div class="w-[40%] overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&auto=format&fit=crop" class="w-full h-[220px] object-cover shadow-md group-hover:scale-105 transition duration-500 ease-out" alt="Car on road from drone"/>
-                </div>
+      <!-- Items list -->
+      <div class="space-y-0 text-gray-900">
+        <!-- Item 1 -->
+        <div
+          class="flex gap-16 py-14 border-b border-gray-100 items-start group"
+        >
+          <div class="w-[60%] pr-10 pt-2">
+            <div class="text-primary font-bold text-[13px] mb-5 tracking-wide">
+              1 Desember, 2025
             </div>
+            <h3 class="text-3xl font-bold mb-6">AerialCast</h3>
+            <p class="text-gray-500 mb-8 text-[15px] leading-loose">
+              Sistem ini menyediakan pemantauan telemetri real-time berbasis
+              LoRa (GPS, voltase, RSSI), perencanaan misi terbang lengkap dengan
+              waypoint dan persetujuan admin, serta manajemen armada terpusat
+              untuk kontrol unit dan pelacakan pemeliharaan drone yang
+              komprehensif.
+            </p>
+            <a
+              href="https://github.com/Astheria23/AerialCast.git"
+              class="text-[14px] font-bold flex items-center gap-4 hover:text-primary transition-colors"
+            >
+              Lihat Selengkapnya <span class="text-primary text-lg">→</span>
+            </a>
+          </div>
+          <div class="w-[40%] overflow-hidden">
+            <img
+              src="image/aerialcast-logo.svg"
+              class="w-full h-[220px] object-cover shadow-md group-hover:scale-105 transition duration-500 ease-out"
+              alt="Car on road from drone"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="bg-primary text-white pb-8">
-        <div class="max-w-[1400px] w-full mx-auto px-16 flex justify-between items-center border-t border-white/10 mt-32 pt-10 text-[13px] text-white/50">
-            <div class="flex gap-4">
-                <p>AAS-RG © 2025. All rights reserved.</p>
-            </div>
-            <div class="flex gap-8 items-center">
-                <a href="#" class="hover:text-white transition-colors">Contact Us</a>
-            </div>
+      <div
+        class="max-w-[1400px] w-full mx-auto px-16 flex justify-between items-center border-t border-white/10 mt-32 pt-10 text-[13px] text-white/50"
+      >
+        <div class="flex gap-4">
+          <p>AAS-RG © 2025. All rights reserved.</p>
         </div>
+        <div class="flex gap-8 items-center">
+          <a href="#" class="hover:text-white transition-colors">Contact Us</a>
+        </div>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
