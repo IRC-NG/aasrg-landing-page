@@ -29,7 +29,7 @@
 
       <!-- Navbar -->
       <nav
-        class="relative z-10 flex items-center justify-between px-10 py-6 text-white border-b border-white/20 max-w-6xl mx-auto w-full"
+        class="relative z-10 flex flex-wrap items-center justify-between px-5 md:px-10 py-4 md:py-6 text-white border-b border-white/20 max-w-6xl mx-auto w-full"
       >
         <div class="text-2xl font-bold flex items-center">
           <span class="mr-2 tracking-wide">AAS-RG</span>
@@ -62,26 +62,26 @@
 
       <!-- Hero Content -->
       <div
-        class="relative z-10 max-w-6xl w-full mx-auto px-10 flex-1 flex flex-col justify-end pb-24"
+        class="relative z-10 max-w-6xl w-full mx-auto px-5 md:px-10 flex-1 flex flex-col justify-center md:justify-end pb-10 md:pb-24"
         id="beranda"
       >
-        <div class="flex items-end justify-between w-full">
+        <div class="flex flex-col md:flex-row items-start md:items-end justify-between w-full gap-8 md:gap-0">
           <h1
-            class="text-white text-[3.5rem] font-bold leading-[1.1] w-[55%] pb-4 drop-shadow-lg"
+            class="text-white text-4xl md:text-[3.5rem] font-bold leading-[1.2] md:leading-[1.1] w-full md:w-[55%] pb-0 md:pb-4 drop-shadow-lg"
           >
             Autonomous Aerial System Research Group
           </h1>
-          <div class="w-[35%] flex flex-col justify-end pb-8">
-            <p class="text-white text-base mb-8 leading-relaxed drop-shadow-md">
+          <div class="w-full md:w-[35%] flex flex-col justify-end pb-0 md:pb-8">
+            <p class="text-white text-sm md:text-base mb-6 md:mb-8 leading-relaxed drop-shadow-md">
               Pengembangan sistem drone cerdas bagi sektor pendidikan dan solusi
               logistik otomatis
             </p>
             <a href="#about">
               <button
-                class="bg-white text-gray-900 px-8 py-4 font-bold flex items-center justify-between w-max gap-8 hover:bg-gray-100 transition-colors"
+                class="bg-white text-gray-900 px-6 py-3 md:px-8 md:py-4 font-bold flex items-center justify-between w-max gap-4 md:gap-8 hover:bg-gray-100 transition-colors"
               >
                 Selengkapnya
-                <span class="text-primary font-bold text-xl leading-none"
+                <span class="text-primary font-bold text-lg md:text-xl leading-none"
                   >→</span
                 >
               </button>
@@ -93,7 +93,7 @@
 
     <!-- About Us Section -->
     <section
-      class="max-w-6xl mx-auto px-10 py-24 flex flex-col md:flex-row gap-16 items-center bg-white"
+      class="max-w-6xl mx-auto px-5 md:px-10 py-16 md:py-24 flex flex-col md:flex-row gap-10 md:gap-16 items-center bg-white"
       id="about"
     >
       <div class="w-full md:w-1/2 relative">
@@ -102,12 +102,12 @@
         ></div>
         <img
           src="images/hero.jpeg"
-          class="relative z-10 w-full rounded-xl shadow-md h-[400px] object-cover"
+          class="relative z-10 w-full rounded-xl shadow-md h-[250px] sm:h-[300px] md:h-[400px] object-cover"
           alt="Tim AAS-RG"
         />
       </div>
       <div class="w-full md:w-1/2">
-        <h2 class="text-[2.5rem] font-bold mb-6 text-gray-900 leading-tight">
+        <h2 class="text-3xl md:text-[2.5rem] font-bold mb-4 md:mb-6 text-gray-900 leading-tight">
           Mengenal Lebih Dekat<br /><span class="text-primary">AAS-RG</span>
         </h2>
         <div class="h-1 w-20 bg-primary mb-8"></div>
@@ -129,8 +129,8 @@
     </section>
 
     <!-- Features Section -->
-    <section class="max-w-6xl mx-auto px-10 py-24 flex gap-12 bg-white">
-      <div class="w-1/2 grid grid-cols-2 gap-8">
+    <section class="max-w-6xl mx-auto px-5 md:px-10 py-12 md:py-24 flex flex-col-reverse md:flex-row gap-8 md:gap-12 bg-white">
+      <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
         <!-- Card 1 (Blue) -->
         <div
           class="bg-primary text-white p-8 shadow-md flex flex-col justify-between hover:-translate-y-1 transition duration-300"
@@ -186,10 +186,10 @@
           </div>
         </div>
       </div>
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <img
           src="images/drone2.jpeg"
-          class="w-full h-[105%] object-cover shadow-sm"
+          class="w-full h-[250px] md:h-[105%] object-cover shadow-sm rounded-lg md:rounded-none"
           alt="Drone 1"
         />
       </div>
@@ -197,24 +197,24 @@
 
     <!-- Services Section -->
     <section
-      class="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto mt-10"
+      class="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto mt-10 md:mt-20"
       id="produk"
     >
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <img
           src="images/timirc.jpeg"
-          class="w-full h-[500px] object-cover"
+          class="w-full h-[300px] md:h-[500px] object-cover"
           alt="Flying Drone"
         />
       </div>
       <div
-        class="w-1/2 bg-primary text-white p-16 md:p-24 flex flex-col justify-center"
+        class="w-full md:w-1/2 bg-primary text-white p-8 sm:p-12 md:p-24 flex flex-col justify-center"
       >
-        <h2 class="text-[2.3rem] font-bold mb-14 w-11/12 leading-tight">
+        <h2 class="text-2xl md:text-[2.3rem] font-bold mb-8 md:mb-14 w-full md:w-11/12 leading-tight">
           Produk yang telah dibuat oleh tim Autonomous Aerial System Research
           Group
         </h2>
-        <div class="flex gap-16 mb-16">
+        <div class="flex gap-8 md:gap-16 mb-8 md:mb-16">
           <div>
             <div class="text-[2.5rem] font-bold mb-2">2</div>
             <div
@@ -245,14 +245,14 @@
 
     <!-- Tech and Innovation -->
     <section
-      class="max-w-6xl mx-auto px-10 pt-32 pb-24 flex gap-12 items-center bg-white"
+      class="max-w-6xl mx-auto px-5 md:px-10 pt-16 md:pt-32 pb-12 md:pb-24 flex flex-col md:flex-row gap-10 md:gap-12 items-center bg-white"
     >
-      <div class="w-1/2 pr-12">
-        <h2 class="text-4xl font-bold mb-6 text-gray-900">Produk Unggulan</h2>
-        <h3 class="text-primary font-semibold text-[17px] mb-8 leading-snug">
+      <div class="w-full md:w-1/2 pr-0 md:pr-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Produk Unggulan</h2>
+        <h3 class="text-primary font-semibold text-base md:text-[17px] mb-6 md:mb-8 leading-snug">
           Buku Tutorial Pembuatan Drone dari Nol
         </h3>
-        <p class="text-gray-500 mb-10 text-[15px] leading-relaxed">
+        <p class="text-gray-500 mb-8 md:mb-10 text-sm md:text-[15px] leading-relaxed">
           Buku ini memberikan panduan lengkap untuk merakit dan memahami drone
           quadcopter berbasis Arduino Uno dan MultiWii. Dengan pendekatan
           praktis berbasis proyek, pembaca diajak mempelajari prinsip dasar
@@ -260,15 +260,15 @@
           perakitan hingga uji terbang.
         </p>
         <button
-          class="bg-primary text-white border border-primary px-8 py-3.5 font-bold text-[13px] w-max hover:bg-blue-800 transition-colors shadow-lg shadow-primary/30"
+          class="bg-primary text-white border border-primary px-6 md:px-8 py-3 md:py-3.5 font-bold text-[13px] w-max hover:bg-blue-800 transition-colors shadow-lg shadow-primary/30"
         >
           Selengkapnya
         </button>
       </div>
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <img
           src="images/buku.jpeg"
-          class="w-full h-[380px] object-cover shadow-sm bg-gray-50"
+          class="w-full h-[280px] md:h-[380px] object-cover shadow-sm bg-gray-50 rounded-lg md:rounded-none"
           alt="Buku Tutorial"
         />
       </div>
@@ -276,15 +276,15 @@
 
     <!-- Spesifikasi Drone -->
     <section
-      class="bg-lightbg py-32 relative overflow-hidden mt-20"
+      class="bg-lightbg py-16 md:py-32 relative overflow-hidden mt-10 md:mt-20"
       id="spesifikasi"
     >
       <div
-        class="max-w-7xl mx-auto px-10 flex relative z-10 gap-16 items-center flex-row-reverse"
+        class="max-w-7xl mx-auto px-5 md:px-10 flex flex-col md:flex-row-reverse relative z-10 gap-8 md:gap-16 items-center"
       >
         <!-- Right text -->
-        <div class="w-[45%] pr-14 pl-6">
-          <h2 class="text-4xl font-bold mb-8 text-gray-900 leading-[1.2]">
+        <div class="w-full md:w-[45%] pr-0 md:pr-14 pl-0 md:pl-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-gray-900 leading-[1.2]">
             Spesifikasi Drone
           </h2>
 
@@ -392,10 +392,10 @@
           </div>
         </div>
         <!-- Left image -->
-        <div class="w-[60%] -ml-16">
+        <div class="w-full md:w-[60%] ml-0 md:-ml-16 mt-8 md:mt-0">
           <img
             src="images/drone1.jpeg"
-            class="w-full h-[550px] object-cover shadow-2xl scale-x-[-1]"
+            class="w-full h-[300px] md:h-[550px] object-cover shadow-xl md:shadow-2xl rounded-lg md:rounded-none scale-x-[-1]"
             alt="Drone 2"
           />
         </div>
@@ -450,10 +450,10 @@
     </section> -->
 
     <!-- Portfolio Section -->
-    <section class="max-w-6xl mx-auto px-10 py-32 bg-white" id="inovasi">
+    <section class="max-w-6xl mx-auto px-5 md:px-10 py-16 md:py-32 bg-white" id="inovasi">
       <!-- Title row -->
       <div
-        class="flex justify-between items-end mb-16 border-b border-gray-100 pb-10"
+        class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 border-b border-gray-100 pb-8 md:pb-10"
       >
         <div>
           <div
@@ -461,7 +461,7 @@
           >
             Portfolio
           </div>
-          <h2 class="text-[2.5rem] font-bold text-gray-900">Inovasi Terbaru</h2>
+          <h2 class="text-3xl md:text-[2.5rem] font-bold text-gray-900">Inovasi Terbaru</h2>
         </div>
       </div>
 
@@ -469,14 +469,14 @@
       <div class="space-y-0 text-gray-900">
         <!-- Item 1 -->
         <div
-          class="flex gap-16 py-14 border-b border-gray-100 items-start group"
+          class="flex flex-col-reverse md:flex-row gap-8 md:gap-16 py-8 md:py-14 border-b border-gray-100 items-start group"
         >
-          <div class="w-[60%] pr-10 pt-2">
-            <div class="text-primary font-bold text-[13px] mb-5 tracking-wide">
+          <div class="w-full md:w-[60%] pr-0 md:pr-10 pt-2">
+            <div class="text-primary font-bold text-[13px] mb-4 md:mb-5 tracking-wide">
               1 Desember, 2025
             </div>
-            <h3 class="text-3xl font-bold mb-6">AerialCast</h3>
-            <p class="text-gray-500 mb-8 text-[15px] leading-loose">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">AerialCast</h3>
+            <p class="text-gray-500 mb-6 md:mb-8 text-sm md:text-[15px] leading-loose">
               Sistem ini menyediakan pemantauan telemetri real-time berbasis
               LoRa (GPS, voltase, RSSI), perencanaan misi terbang lengkap dengan
               waypoint dan persetujuan admin, serta manajemen armada terpusat
@@ -490,10 +490,10 @@
               Lihat Selengkapnya <span class="text-primary text-lg">→</span>
             </a>
           </div>
-          <div class="w-[40%] overflow-hidden">
+          <div class="w-full md:w-[40%] overflow-hidden rounded-lg md:rounded-none">
             <img
               src="images/aerialcast-logo.svg"
-              class="w-full h-[220px] object-cover shadow-md group-hover:scale-105 transition duration-500 ease-out"
+              class="w-full h-[200px] md:h-[220px] object-cover shadow-md group-hover:scale-105 transition duration-500 ease-out"
               alt="Car on road from drone"
             />
           </div>
@@ -625,12 +625,12 @@
     <!-- Footer Section -->
     <footer class="bg-primary text-white pb-8">
       <div
-        class="max-w-[1400px] w-full mx-auto px-16 flex justify-between items-center border-t border-white/10 mt-32 pt-10 text-[13px] text-white/50"
+        class="max-w-[1400px] w-full mx-auto px-5 md:px-16 flex flex-col md:flex-row justify-between items-center border-t border-white/10 mt-16 md:mt-32 pt-8 md:pt-10 text-[13px] text-white/50 gap-4 md:gap-0"
       >
-        <div class="flex gap-4">
+        <div class="flex gap-4 text-center md:text-left">
           <p>AAS-RG © 2025. All rights reserved.</p>
         </div>
-        <div class="flex gap-8 items-center">
+        <div class="flex gap-8 items-center flex-wrap justify-center">
           <a href="#" class="hover:text-white transition-colors">Contact Us</a>
         </div>
       </div>
