@@ -22,7 +22,7 @@
       class="relative bg-gray-900 min-h-[100vh] flex flex-col overflow-hidden"
     >
       <img
-        src="image/hero.jpeg"
+        src="images/hero.jpeg"
         class="absolute inset-0 w-full h-full object-cover opacity-30"
         alt="Drone Hero Background"
       />
@@ -76,12 +76,16 @@
               Pengembangan sistem drone cerdas bagi sektor pendidikan dan solusi
               logistik otomatis
             </p>
-            <button
-              class="bg-white text-gray-900 px-8 py-4 font-bold flex items-center justify-between w-max gap-8 hover:bg-gray-100 transition-colors"
-            >
-              Selengkapnya
-              <span class="text-primary font-bold text-xl leading-none">→</span>
-            </button>
+            <a href="#about">
+              <button
+                class="bg-white text-gray-900 px-8 py-4 font-bold flex items-center justify-between w-max gap-8 hover:bg-gray-100 transition-colors"
+              >
+                Selengkapnya
+                <span class="text-primary font-bold text-xl leading-none"
+                  >→</span
+                >
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -97,7 +101,7 @@
           class="absolute inset-0 bg-primary/10 rounded-xl transform translate-x-4 translate-y-4"
         ></div>
         <img
-          src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88?w=800&auto=format&fit=crop"
+          src="images/hero.jpeg"
           class="relative z-10 w-full rounded-xl shadow-md h-[400px] object-cover"
           alt="Tim AAS-RG"
         />
@@ -108,15 +112,18 @@
         </h2>
         <div class="h-1 w-20 bg-primary mb-8"></div>
         <p class="text-gray-500 mb-6 text-[15px] leading-relaxed">
-          Autonomous Aerial System Research Group (AAS-RG) berdedikasi untuk
-          menciptakan teknologi drone tanpa awak untuk berbagai kebutuhan di
-          sektor pendidikan dan pengiriman cerdas. Membawa semangat inovasi di
-          Indonesia.
+          Kami berdedikasi mengembangkan sistem drone cerdas yang memadukan
+          inovasi teknologi dengan kebutuhan edukasi dan riset akademik. Fokus
+          kami adalah menciptakan platform robotika yang adaptif, memberikan
+          pondasi bagi pengembangan talenta serta teknologi udara yang presisi
+          dan mudah diakses.
         </p>
         <p class="text-gray-500 mb-8 text-[15px] leading-relaxed">
-          Dari riset hingga produksi, kami memprioritaskan keamanan
-          komprehensif, performa yang handal, dan sistem pangkalan (ground
-          station) untuk memastikan teknologi mengudara tetap terkendali.
+          Lebih dari sekadar alat edukasi, kami merintis eksperimen pengiriman
+          barang otomatis sebagai solusi logistik masa depan. Melalui pengujian
+          sistem yang terukur, kami berkomitmen menghadirkan ekosistem
+          pengiriman yang efisien, aman, dan terotomatisasi untuk menjawab
+          tantangan mobilitas modern.
         </p>
       </div>
     </section>
@@ -181,9 +188,9 @@
       </div>
       <div class="w-1/2">
         <img
-          src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=800&auto=format&fit=crop"
+          src="images/drone2.jpeg"
           class="w-full h-[105%] object-cover shadow-sm"
-          alt="Drone against sky"
+          alt="Drone 1"
         />
       </div>
     </section>
@@ -195,7 +202,7 @@
     >
       <div class="w-1/2">
         <img
-          src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1000&auto=format&fit=crop"
+          src="images/timirc.jpeg"
           class="w-full h-[500px] object-cover"
           alt="Flying Drone"
         />
@@ -260,7 +267,7 @@
       </div>
       <div class="w-1/2">
         <img
-          src="image/buku.jpeg"
+          src="images/buku.jpeg"
           class="w-full h-[380px] object-cover shadow-sm bg-gray-50"
           alt="Buku Tutorial"
         />
@@ -387,9 +394,9 @@
         <!-- Left image -->
         <div class="w-[60%] -ml-16">
           <img
-            src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1200&auto=format&fit=crop"
+            src="images/drone1.jpeg"
             class="w-full h-[550px] object-cover shadow-2xl scale-x-[-1]"
-            alt="Drone sideways"
+            alt="Drone 2"
           />
         </div>
       </div>
@@ -485,10 +492,131 @@
           </div>
           <div class="w-[40%] overflow-hidden">
             <img
-              src="image/aerialcast-logo.svg"
+              src="images/aerialcast-logo.svg"
               class="w-full h-[220px] object-cover shadow-md group-hover:scale-105 transition duration-500 ease-out"
               alt="Car on road from drone"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri Section – desain baru -->
+    <section id="galeri" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">
+          Galeri Kegiatan
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="relative group overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="images/gallery/image1.JPG"
+              alt="Gallery Image 1"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <!-- overlay dengan caption -->
+            <div
+              class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white text-lg font-medium">Kegiatan 1</span>
+            </div>
+            <!-- klik untuk modal -->
+            <button
+              class="absolute inset-0 focus:outline-none"
+              onclick="openModal(this.previousElementSibling.src)"
+            ></button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="relative group overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="images/gallery/image2.JPG"
+              alt="Gallery Image 2"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white text-lg font-medium">Kegiatan 2</span>
+            </div>
+            <button
+              class="absolute inset-0 focus:outline-none"
+              onclick="openModal(this.previousElementSibling.src)"
+            ></button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative group overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="images/gallery/image3.JPG"
+              alt="Gallery Image 3"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white text-lg font-medium">Kegiatan 3</span>
+            </div>
+            <button
+              class="absolute inset-0 focus:outline-none"
+              onclick="openModal(this.previousElementSibling.src)"
+            ></button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="relative group overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="images/gallery/image4.JPG"
+              alt="Gallery Image 4"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white text-lg font-medium">Kegiatan 4</span>
+            </div>
+            <button
+              class="absolute inset-0 focus:outline-none"
+              onclick="openModal(this.previousElementSibling.src)"
+            ></button>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="relative group overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="images/gallery/image5.JPG"
+              alt="Gallery Image 5"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white text-lg font-medium">Kegiatan 5</span>
+            </div>
+            <button
+              class="absolute inset-0 focus:outline-none"
+              onclick="openModal(this.previousElementSibling.src)"
+            ></button>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="relative group overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="images/gallery/image6.jpeg"
+              alt="Gallery Image 6"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white text-lg font-medium">Kegiatan 6</span>
+            </div>
+            <button
+              class="absolute inset-0 focus:outline-none"
+              onclick="openModal(this.previousElementSibling.src)"
+            ></button>
           </div>
         </div>
       </div>
